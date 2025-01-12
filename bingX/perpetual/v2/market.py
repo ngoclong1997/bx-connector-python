@@ -118,7 +118,7 @@ def kline(self,
 
     https://bingx-api.github.io/docs/swapV2/market-api.html#_7-k-line-data
     '''
-    res = self.get("/openApi/swap/v2/quote/klines", params={
+    res = self.get("/openApi/swap/v3/quote/klines", params={
         "symbol":    symbol,
         "interval":  interval,
         "startTime": startTime,
