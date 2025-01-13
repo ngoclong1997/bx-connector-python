@@ -170,7 +170,7 @@ def cancel_all_orders(self,
     return res['data']
 
 def current_orders(self,
-    symbol:     str,
+    symbol:     str = None,
     recvWindow: int = None,
 ) -> dict:
     ''' Query all current pending orders

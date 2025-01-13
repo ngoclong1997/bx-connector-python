@@ -21,7 +21,7 @@ def balance(self,
     return res['data']
 
 def positions(self,
-    symbol: str,
+    symbol: str = None,
     recvWindow: int = None,
 ) -> dict:
     ''' Perpetual Swap Positions
