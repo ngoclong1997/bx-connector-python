@@ -161,7 +161,7 @@ def cancel_all_orders(self,
 
     https://bingx-api.github.io/docs/swapV2/trade-api.html#_6-cancel-all-orders
     '''
-    res = self.post("/openApi/swap/v2/trade/allOpenOrders", params={
+    res = self.delete("/openApi/swap/v2/trade/allOpenOrders", params={
         "symbol":     symbol,
         "recvWindow": recvWindow,
     })
