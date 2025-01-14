@@ -152,7 +152,8 @@ def cancel_orders(self,
     return res['data']
 
 def cancel_all_orders(self,
-    symbol:     str,
+    symbol:     str = None,
+    type:       str = None,
     recvWindow: int = None,
 ) -> dict:
     ''' Cancel All Orders
