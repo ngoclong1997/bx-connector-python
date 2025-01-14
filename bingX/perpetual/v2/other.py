@@ -32,7 +32,7 @@ def delete_listen_key(listen_key):
     response = requests.delete(url)
 
     if response.status_code == 200:
-        return "ListenKey extended successfully."
+        return "ListenKey deleted successfully."
     else:
         if response.status_code == 204:
             return "Not Content"
@@ -49,7 +49,7 @@ def extend_listen_key(listen_key):
     response = requests.put(url)
 
     if response.status_code == 200:
-        return "ListenKey Deleted successfully."
+        return "ListenKey extended successfully."
     else:
         if response.status_code == 204:
             return "Not Content"
